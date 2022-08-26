@@ -9,7 +9,7 @@ php-fpm.conf 文件在 php 安装文件的 /etc 目录下，
 要打開 unix socket ，要先設定 www.conf
 ```
 
-listen = 127.0.0.1:9000  # 預設
+# listen = 127.0.0.1:9000  # 預設
 
 listen = /run/php/php7.4-fpm.sock
 ```
