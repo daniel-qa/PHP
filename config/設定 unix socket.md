@@ -45,6 +45,7 @@ systemctl restart php-fpm.service
 
 ```
 systemctl restart nginx.service
+service php7.4-fpm restart
 ```
 
 这样配置好后，就会在/var/run/php-fpm/目录下自动生成一个php5-fpm.sock文件，然后一切OK。
