@@ -11,7 +11,7 @@ php-fpm.conf 文件在 php 安装文件的 /etc 目录下，
 
 listen = 127.0.0.1:9000  # 預設
 
-listen = /var/run/php-fpm.sock
+listen = /run/php/php7.4-fpm.sock
 ```
 
 php-fpm 的 listen 指令可以通过五种方式处理 FastCGI 请求，分别是：
