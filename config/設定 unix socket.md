@@ -13,7 +13,34 @@ php-fpm.conf 文件在 php 安装文件的 /etc 目录下，
 
 listen = /run/php/php7.4-fpm.sock
 ```
+* 然后重新加载 PHP-FPM：
+```
+systemctl restart php-fpm.service
+```
 
+接下来通过你的nginx的配置和所有的虚拟主机和改线 fastcgi_pass 127.0.0.1:9000; to fastcgi_pass unix:/tmp/php5-fpm.sock;,像这样：
+
+* vi /etc/nginx/conf.d/default.conf 
+```
+
+ location ~ .php$ {
+        root           /usr/share/nginx/html;
+        try_files $uri =404;
+        fastcgi_pass   unix:/var/run/php-fpm/php5-fpm.sock;
+        fastcgi_index  index.php;
+        fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+        include        fastcgi_params;
+    }
+```    
+最后重新加载 nginx：
+
+```
+systemctl restart nginx.service
+```
+
+这样配置好后，就会在/var/run/php-fpm/目录下自动生成一个php5-fpm.sock文件，然后一切OK。
+
+***
 php-fpm 的 listen 指令可以通过五种方式处理 FastCGI 请求，分别是：
 
 1. ipv4: 端口号
