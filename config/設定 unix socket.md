@@ -13,6 +13,15 @@ php-fpm.conf 文件在 php 安装文件的 /etc 目录下，
 
 listen = /run/php/php7.4-fpm.sock
 ```
+* 設定權限
+```
+listen.owner = www
+
+listen.group = www
+
+listen.mode = 0660
+```
+
 * 然后重新加载 PHP-FPM：
 ```
 systemctl restart php-fpm.service
