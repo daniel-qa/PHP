@@ -1,5 +1,3 @@
-```
-
 php-fpm 的运行端口号和 socket 文件的地址都是在 php-fpm.conf 中配置的。
 
 php-fpm.conf 文件在 php 安装文件的 /etc 目录下，
