@@ -4,7 +4,7 @@ php-fpm.conf 文件在 php 安装文件的 /etc 目录下，
 
 比如你的 php 安装在 /opt/php 目录，则应该是 /opt/php/php-fpm.conf。
 
-( 也有可能在  /usr/local/etc/ ，但主設定會在 php-fpm.d/ 目錄下)
+( 也有可能在  **/usr/local/etc/** ，但主設定會在 php-fpm.d/ 目錄下)
 
 要打開 unix socket ，要先設定 www.conf
 ```
