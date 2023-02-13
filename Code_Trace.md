@@ -1,10 +1,15 @@
 * 
+```
+echo " php test ";
+
+echo " php test ";exit;
+
 //echo " jeff test";
 //exit;
 
 // echo $abc;exit;
 
-
+```
 * js 
 
 ```
