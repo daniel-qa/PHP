@@ -10,6 +10,15 @@ echo " php test ";exit;
 // echo $abc;exit;
 
 ```
+```
+echo "test 1";
+
+exit;
+
+echo "test x";
+
+```
+
 * js 
 
 ```
