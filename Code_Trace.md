@@ -24,10 +24,11 @@ echo "test x";
 
 ```
 
-* 打印 Array
+* 打印 json Array
 ```
  echo json_encode($arr);
 ```
+* 打印 Array
 ```
 $fruits = array("Apple", "Mango", "Banana", "Pears", "Watermelon", "Guava");
 print_r($fruits);
