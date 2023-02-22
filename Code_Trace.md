@@ -1,5 +1,10 @@
 * Trace
 ```
+  echo "test1 __construct\n";
+  exit;
+```
+
+```
 echo " php test ";
 
 echo " php test ";exit;
