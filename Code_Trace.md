@@ -15,12 +15,9 @@ echo " php test ";exit;
 // echo $abc;exit;
 
 ```
+* 在 View 中 打印 Debug 字串
 ```
-echo "test 1";
-
-exit;
-
-echo "test x";
+<?php echo "view test";exit; ?>
 
 ```
 
