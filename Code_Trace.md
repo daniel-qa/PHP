@@ -1,6 +1,6 @@
 * Trace
 ```
-  echo "test1 __construct\n";
+  echo "test1 __construct <br>";
   exit;
 ```
 
