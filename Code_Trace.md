@@ -24,6 +24,13 @@ echo "test x";
 
 ```
 
+* 打印 Array
+
+```
+$fruits = array("Apple", "Mango", "Banana", "Pears", "Watermelon", "Guava");
+print_r($fruits);
+```
+
 * js 
 
 ```
