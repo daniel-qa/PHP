@@ -41,6 +41,16 @@ alert('hello world');
 
 ```
 
+* 迴圈中，直接指定出錯元素執行
+
+```
+foreach ($filed as $item) {
+
+ $item = $filed[2];
+
+}
+```
+
 
 * chrome F12
 
