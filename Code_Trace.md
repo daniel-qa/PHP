@@ -1,7 +1,4 @@
-* F12 檢視歷紀錄
-``` 
-  Preserve log 打開  
-```
+
 
 * Trace
 ```
@@ -67,4 +64,9 @@ https://blog.51cto.com/u_12890843/5347153
 在Elements面板中指定的DOM节点上右击，在弹出的菜单中选择Break on…，可以看到三个选择项，比如我们选择Subtree modifications，
 那么当选择的节点里面的子节点被添加、删除、修改，则断点就会被触发。
 
+```
+
+* F12 檢視歷紀錄
+``` 
+  Preserve log 打開  
 ```
