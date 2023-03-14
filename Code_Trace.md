@@ -1,4 +1,4 @@
-* [javascript trace]()
+* [javascript trace](https://github.com/daniel-qa/PHP/wiki/javascript-trace)
 
 * Trace
 ```
