@@ -1,3 +1,8 @@
+* F12 檢視歷紀錄
+``` 
+  Preserve log 打開  
+```
+
 * Trace
 ```
   echo "test1 __construct <br>";
