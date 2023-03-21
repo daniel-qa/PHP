@@ -1,3 +1,8 @@
+* 查看 Cookie  
+```
+F12 -> Application -> Storage -> Cookies
+```
+
 * [javascript trace](https://github.com/daniel-qa/PHP/wiki/javascript-trace)
 
 * Trace
