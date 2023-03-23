@@ -38,6 +38,26 @@ $fruits = array("Apple", "Mango", "Banana", "Pears", "Watermelon", "Guava");
 print_r($fruits);
 ```
 
+* var_dump
+```
+Catchable fatal error: Object of class stdClass could not be converted to string in ……\***.php on line 10
+
+具体错误是语句：echo $result;
+从错误说明中可知$result是class stdClass类型，我们用var_dump()函数进行了输出，此函数显示关于一个或多个表达式的结构信息，包括表达式的类型与值。数组将递归展开值，通过缩进显示其结构。 语句为
+
+var_dump($result);
+
+显示结果为：
+
+object(stdClass)＃2 (1) { ["return"]=> string(46) "Hello, My Friend!"}
+
+很明显，我们想要输出的结果就是“Hello,My Friend!”，代表的就是这个类对象中return变量的值，因此，我们可用如下语句输出我们想要的值：
+
+echo $result->return;
+
+替代原来的echo $result；
+```
+
 * js 
 
 ```
