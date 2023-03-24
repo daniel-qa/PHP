@@ -20,15 +20,28 @@ echo " php test ";exit;
 //exit;
 
 // echo $abc;exit;
+```
+
+
+* 印出 boolan 值
 
 ```
+echo $bool_val ? 'true' : 'false';
+
+Or if you only want output when it's false:
+echo !$bool_val ? 'false' : '';
+```
+
+
 * 在 View 中 打印 Debug 字串
+
 ```
 <?php echo "view test";exit; ?>
 
 ```
 
 * 打印 json Array
+
 ```
  echo json_encode($arr);
 ```
