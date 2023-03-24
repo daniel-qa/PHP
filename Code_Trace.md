@@ -28,7 +28,7 @@ echo " php test ";exit;
 ```
 echo $bool_val ? 'true' : 'false';
 
-Or if you only want output when it's false:
+* Or if you only want output when it's false:
 echo !$bool_val ? 'false' : '';
 ```
 
